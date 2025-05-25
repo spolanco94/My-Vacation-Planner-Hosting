@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vacation Planner App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Vacation Planner</h1>
+    <p>A simple Android app for managing your vacations and excursions.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Downloads</h2>
+      <ul>
+        <li><a href="assets/VacationPlanner.apk" download>Download APK</a></li>
+        <li><a href="assets/D424 _ User Guide_hi.png" download>User Guide</a></li>
+        <li><a href="assets/ClassDiagram_Final.png" download>Class Diagram</a></li>
+        <li><a href="assets/README.txt" download>README</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Preview</h2>
+      <p><strong>User Guide:</strong></p>
+      <a href="assets/D424 _ User Guide_hi.png" target="_blank">Click here to view full-size User Guide</a>
+      <img src="assets/D424 _ User Guide_lo.png" alt="User Guide preview" class="preview" />
+
+      <p><strong>Class Diagram:</strong></p>
+      <img src="assets/ClassDiagram_Final.png" alt="Class Diagram preview" class="preview" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vacation Planner. Built for WGU Capstone (D424).</p>
+  </footer>
+
+  <script>
+  document.querySelectorAll('.preview').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('zoomed');
+    });
+  });
+</script>
+</body>
+</html>
